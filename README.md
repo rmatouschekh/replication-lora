@@ -23,6 +23,7 @@ This code makes use of two outside resources to replicate the LoRA setup. The fi
 
 ## Notes
 
+* The optimizer (AdamW) and LR schedule (linear) are not specified in the training code because they are the defaults used by the huggingface Trainer class.
 * The initial paper claims that the version of `DeBERTa XXL` model with LoRA has 4.7M. However, two methods of freezing all but the query and value components (that in the attached code and that enabled by the `PEFT` library in huggingfce), both say that the LoRA version of `DeBERTa XXL` has 2.36M parameters.
 * I could not figure out what was meant or how to set the CLS dropout, as specified for the `DeBERTa` experiments. Therefore the results shown here do now include that information.
 * The initial results reported by the paper show the averaged results for each experiment with 5 different random seeds. Again, due to restricted GPU hours, I was not able to run each experiment 5 times.
