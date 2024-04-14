@@ -9,6 +9,12 @@ The dataset used for this table is the GLUE benchmark dataset. I use [the versio
 
 Here are the results from my replication runs. **Due to the GPU hours needed to run many of these experiments, some results are still forthcoming. The repo will be updated as new results finish running.**
 
+| Model | # Trainable Parameters | MNLI | SST-2 | MRPC | CoLA | QNLI | QQP | RTE | STS-B | Avg. |
+| ----- | ---------------------- | ---- | ----- | ---- | ---- | ---- | --- | --- | ----- | ---- |
+| RoBERTa Base | 0.3M | x | 94.5 | 86.6 | 57.7 | 92.6 | x | 71.1 | x | x |
+| RoBERTa Large | 0.8M | x | x | - | x | x | x | - | x | x |
+| DeBERTa XXL | 2.4M | x | x | x | - | x | x | - | x | x |
+
 ## Code
 
 There are three scripts associated with this project. Each replicates the results for a different model: `roberta_base.py`, `roberta_large.py`, and `deberta_xxl.py`. To run the different GLUE benchmark tests, adjust the code at the places marked by comments as defined by Appendix B of the LoRA paper. Each script must be connected to one CUDA-enabled GPU to run.
