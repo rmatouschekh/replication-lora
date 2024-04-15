@@ -12,7 +12,7 @@ Here are the results from my replication runs. **Due to the GPU hours needed to 
 | Model | # Trainable Parameters | MNLI | SST-2 | MRPC | CoLA | QNLI | QQP | RTE | STS-B | Avg. |
 | ----- | ---------------------- | ---- | ----- | ---- | ---- | ---- | --- | --- | ----- | ---- |
 | RoBERTa Base | 0.3M | x | 94.5 | 86.6 | 57.7 | 92.6 | x | 71.1 | x | x |
-| RoBERTa Large | 0.8M | x | x | 87.3 | 57.5 | x | x | - | x | x |
+| RoBERTa Large | 0.8M | x | x | 87.3 | 57.5 | 93.2 | x | 80.7 | x | x |
 | DeBERTa XXL | 2.4M | x | x | x | - | x | x | - | x | x |
 
 ## Code
