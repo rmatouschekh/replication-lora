@@ -16,6 +16,7 @@ Here are the results from my replication runs. **Due to the GPU hours needed to 
 | DeBERTa XXL | 2.4M | x | x | –** | - | x | x | - | x | x |
 
 \* Some values produced were > 5.0. These were rounded down to 5.0 to allow for evaluation.
+
 ** Batch size reduced to 24 from 32 to allow for training on available GPUs.
 
 ## Code
